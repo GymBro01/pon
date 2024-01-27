@@ -1,0 +1,47 @@
+html, body 
+{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;                     
+}
+
+#field
+{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-gap: 0px;
+    border:solid 2px black;
+}
+
+
+.node
+{
+    padding: 0;
+    border:solid black 2px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+img
+{
+    
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+}
+
+.bl
+{
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 60px;
+    display: block;
+    z-index: 999;
+}
